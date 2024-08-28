@@ -28,7 +28,6 @@ export class OrdersService {
       await session.abortTransaction()
       throw error;
     }
-    return this.ordersRepository.create(orderRequest)
   }
 
   async getOrders() {
